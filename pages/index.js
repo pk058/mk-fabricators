@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 import { ArrowRight, Phone, Mail, MapPin, Factory, Settings, Shield, Award, Users, Calendar, CheckCircle, Wrench, Droplets, Zap, Building } from 'lucide-react';
 
 const MKFabricatorsLanding = () => {
@@ -195,6 +196,10 @@ const MKFabricatorsLanding = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <Head>
+        <title>MK Fabricators | Custom Process Equipment & Water Treatment</title>
+        <meta name="description" content="Leading manufacturers of custom-built process equipment, water treatment plants, and industrial systems for chemical, pharmaceutical, and allied industries. Over 20 years of experience." />
+      </Head>
       {/* Header */}
       <header className="bg-white shadow-sm border-b sticky top-0 z-50">
         <div className="bg-blue-900 text-white py-2">
